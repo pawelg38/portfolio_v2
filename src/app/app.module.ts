@@ -6,7 +6,7 @@ import { TopbarComponent } from './topbar/topbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
-import { Test1Component } from './test1/test1.component';
+import { HomeComponent } from './home/home.component';
 import { Test2Component } from './test2/test2.component';
 import { Test3Component } from './test3/test3.component';
 import { FooterBarComponent } from './footer-bar/footer-bar.component';
@@ -16,7 +16,7 @@ import { HelloSectionComponent } from './hello-section/hello-section.component';
   declarations: [
     AppComponent,
     TopbarComponent,
-    Test1Component,
+    HomeComponent,
     Test2Component,
     Test3Component,
     FooterBarComponent,

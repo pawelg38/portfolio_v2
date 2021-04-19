@@ -1,5 +1,6 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
+import { of } from 'rxjs';
 
 @Component({
   selector: 'app-hello-section',
@@ -33,15 +34,23 @@ import { Component, OnInit } from '@angular/core';
         animate('0.5s 0.1s cubic-bezier(0.25, 0.8, 0.25, 1)')
       ]),
       transition('closed2 => open2', [
-        animate('1.5s 0.5s cubic-bezier(0.25, 0.8, 0.25, 1)')
+        animate('0.5s 0.5s cubic-bezier(0.25, 0.8, 0.25, 1)')
       ]),
     ])
   ]
 })
 export class HelloSectionComponent implements OnInit {
   public animationOn: boolean = false;
+  // textPart1 = "of(Paweł Graboś).subscribe(";
+  // textPart2 = "obs => obs.ShowYourSelf() );";
+  // test10 = of(1,2,3).subscribe(x => 
+  //   console.log(x)
+  // );
+  textPart1 = "Witaj"
+  textPart2 = "Undefined :)"
 
-  constructor() { }
+  constructor() {
+  }
 
   test() {
     this.animationOn = !this.animationOn;
@@ -52,5 +61,4 @@ export class HelloSectionComponent implements OnInit {
       this.animationOn = true;
     }, 0);
   }
-
 }

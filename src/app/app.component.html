@@ -5,7 +5,7 @@
     <router-outlet #outlet="outlet"></router-outlet>
   </div>
   <div class="slidesStepper">
-    <a routerLink="/test1" routerLinkActive="active"><button mat-mini-fab (mouseenter)="isButtonHovered=!isButtonHovered" (mouseleave)="isButtonHovered=!isButtonHovered">Btn1</button></a>
+    <a routerLink="/home" routerLinkActive="active"><button mat-mini-fab (mouseenter)="isButtonHovered=!isButtonHovered" (mouseleave)="isButtonHovered=!isButtonHovered">Btn1</button></a>
     <mat-divider class="cDivider" [ngClass]="{'cDivider_onHover': isButtonHovered}" [vertical]="true" dashed></mat-divider>
     <a routerLink="/test2" routerLinkActive="active"><button mat-mini-fab (mouseenter)="isButtonHovered=!isButtonHovered" (mouseleave)="isButtonHovered=!isButtonHovered">Btn2</button></a>
     <mat-divider class="cDivider" [ngClass]="{'cDivider_onHover': isButtonHovered}" [vertical]="true"></mat-divider>

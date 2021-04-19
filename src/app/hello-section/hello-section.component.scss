@@ -12,14 +12,31 @@
     position: relative;
 }
 .mainText {
-    height: 298px;
-    color: #fff;
+    height: 300px;
+    color: #000;
     font-family: 'Raleway', sans-serif;
     //font-size: 120px;
     font-size: 120px;
     //padding: 80px 0;
+    //background-color: rgb(0, 51, 51);
+    //background-color: #fff;
     
+    .backgroundMask {
+        //border: 1px solid red;
+        height: 100%;
+        width: 50%;
+        //background: linear-gradient(45deg, rgba(0,255,255,0.6) 70%, rgba(49,59,66,0) 70%);
+        background: linear-gradient(45deg, rgba(0,255,255,0.9) 75%, rgba(49,59,66,0) 75%);
+        //background: linear-gradient(45deg, rgba(0,255,255,0.9) 50%, rgba(49,59,66,0) 75%);
+        mix-blend-mode: screen;
+    }
+
     .text {
+        //border: 1px solid red;
         position: absolute;
+        color: #000;
+        height: 100px;
+        //font-weight: 300;
+        //font-weight: 700;
     }
 }
