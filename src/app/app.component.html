@@ -4,17 +4,18 @@
   helloContainer
 </div>
 <div class="slidesBar">
-  <div class="slidesContent">
-    slides
-    <router-outlet></router-outlet>
+  <div [@routeAnimations]="prepareRoute(outlet)" class="slidesContent">
+    <router-outlet #outlet="outlet"></router-outlet>
   </div>
   <div class="slidesStepper">
-    <button mat-mini-fab class="mat-elevation-z6" (mouseenter)="isButtonHovered=!isButtonHovered" (mouseleave)="isButtonHovered=!isButtonHovered">Btn1</button>
+    <a routerLink="/test1" routerLinkActive="active"><button mat-mini-fab (mouseenter)="isButtonHovered=!isButtonHovered" (mouseleave)="isButtonHovered=!isButtonHovered">Btn1</button></a>
     <mat-divider class="cDivider" [ngClass]="{'cDivider_onHover': isButtonHovered}" [vertical]="true" dashed></mat-divider>
-    <!-- <mat-divider class="cDivider" [vertical]="true"></mat-divider> -->
-    <button mat-mini-fab (mouseenter)="isButtonHovered=!isButtonHovered" (mouseleave)="isButtonHovered=!isButtonHovered">Btn2</button>
+    <a routerLink="/test2" routerLinkActive="active"><button mat-mini-fab (mouseenter)="isButtonHovered=!isButtonHovered" (mouseleave)="isButtonHovered=!isButtonHovered">Btn2</button></a>
     <mat-divider class="cDivider" [ngClass]="{'cDivider_onHover': isButtonHovered}" [vertical]="true"></mat-divider>
-    <!-- <mat-divider class="cDivider" [vertical]="true"></mat-divider> -->
-    <button mat-mini-fab (mouseenter)="isButtonHovered=!isButtonHovered" (mouseleave)="isButtonHovered=!isButtonHovered">Btn3</button>
+    <a routerLink="/test3" routerLinkActive="active"><button mat-mini-fab (mouseenter)="isButtonHovered=!isButtonHovered" (mouseleave)="isButtonHovered=!isButtonHovered">Btn3</button></a>
+    <mat-divider class="cDivider" [ngClass]="{'cDivider_onHover': isButtonHovered}" [vertical]="true"></mat-divider>
+    <a routerLink="/test3" routerLinkActive="active"><button mat-mini-fab (mouseenter)="isButtonHovered=!isButtonHovered" (mouseleave)="isButtonHovered=!isButtonHovered">Btn4</button></a>
+    <mat-divider class="cDivider" [ngClass]="{'cDivider_onHover': isButtonHovered}" [vertical]="true"></mat-divider>
+    <a routerLink="/test3" routerLinkActive="active"><button mat-mini-fab (mouseenter)="isButtonHovered=!isButtonHovered" (mouseleave)="isButtonHovered=!isButtonHovered">Btn5</button></a>
   </div>
 </div>
