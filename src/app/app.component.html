@@ -1,8 +1,5 @@
 <app-topbar></app-topbar>
-<div class="helloContainer ">
-  <!-- <div></div> -->
-  helloContainer
-</div>
+<app-hello-section></app-hello-section>
 <div class="slidesBar">
   <div [@routeAnimations]="prepareRoute(outlet)" class="slidesContent">
     <router-outlet #outlet="outlet"></router-outlet>
@@ -19,3 +16,4 @@
     <a routerLink="/test3" routerLinkActive="active"><button mat-mini-fab (mouseenter)="isButtonHovered=!isButtonHovered" (mouseleave)="isButtonHovered=!isButtonHovered">Btn5</button></a>
   </div>
 </div>
+<app-footer-bar></app-footer-bar>
