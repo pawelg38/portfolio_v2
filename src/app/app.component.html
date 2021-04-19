@@ -1,5 +1,5 @@
 <app-topbar></app-topbar>
-<div class="helloContainer">
+<div class="helloContainer ">
   <!-- <div></div> -->
   helloContainer
 </div>
@@ -9,6 +9,12 @@
     <router-outlet></router-outlet>
   </div>
   <div class="slidesStepper">
-    verticalStepper
+    <button mat-mini-fab class="mat-elevation-z6" (mouseenter)="isButtonHovered=!isButtonHovered" (mouseleave)="isButtonHovered=!isButtonHovered">Btn1</button>
+    <mat-divider class="cDivider" [ngClass]="{'cDivider_onHover': isButtonHovered}" [vertical]="true" dashed></mat-divider>
+    <!-- <mat-divider class="cDivider" [vertical]="true"></mat-divider> -->
+    <button mat-mini-fab (mouseenter)="isButtonHovered=!isButtonHovered" (mouseleave)="isButtonHovered=!isButtonHovered">Btn2</button>
+    <mat-divider class="cDivider" [ngClass]="{'cDivider_onHover': isButtonHovered}" [vertical]="true"></mat-divider>
+    <!-- <mat-divider class="cDivider" [vertical]="true"></mat-divider> -->
+    <button mat-mini-fab (mouseenter)="isButtonHovered=!isButtonHovered" (mouseleave)="isButtonHovered=!isButtonHovered">Btn3</button>
   </div>
 </div>
