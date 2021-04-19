@@ -1,8 +1,8 @@
-<div class="helloContainer b1">
-    <div class="b1">
-      <p class="">Express</p>
-    </div>
-    <div class="b1">
-      <p class="">URself ;)</p>
+<div (click)="test()" class="cContainer">
+    <div class="mainText">
+        <!-- <div class="textPart1" [ngClass]="{'textPart1_animation': animationOn}">Express</div>
+        <div class="textPart2" [ngClass]="{'textPart2_animation': animationOn}">URself ;)</div> -->
+        <div [@openClose]="animationOn ? 'open1' : 'closed1'" class="text">Express</div>
+        <div [@openClose]="animationOn ? 'open2' : 'closed2'" class="text">URself ;)</div>
     </div>
 </div>
