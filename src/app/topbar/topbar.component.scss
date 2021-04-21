@@ -1,6 +1,12 @@
 .cTopBar {
-    height: 50px;
+    //height: 50px;
     background-color: rgb(49, 59, 66);
     color: #fff;
     position: relative;
+    z-index: 1999;
+    padding: 10px;
+
+    button {
+        //border: 2px solid #fff;
+    }
 }
