@@ -4,16 +4,14 @@
   <div [@routeAnimations]="prepareRoute(outlet)" class="slidesContent">
     <router-outlet #outlet="outlet"></router-outlet>
   </div>
-  <div class="slidesStepper">
-    <a routerLink="/home" routerLinkActive="active"><button mat-mini-fab (mouseenter)="isButtonHovered=!isButtonHovered" (mouseleave)="isButtonHovered=!isButtonHovered">Btn1</button></a>
-    <mat-divider class="cDivider" [ngClass]="{'cDivider_onHover': isButtonHovered}" [vertical]="true" dashed></mat-divider>
-    <a routerLink="/test2" routerLinkActive="active"><button mat-mini-fab (mouseenter)="isButtonHovered=!isButtonHovered" (mouseleave)="isButtonHovered=!isButtonHovered">Btn2</button></a>
+  <div class="slidesController">
+    <a routerLink="/home" routerLinkActive="active"><button mat-mini-fab (mouseenter)="isButtonHovered=!isButtonHovered" (mouseleave)="isButtonHovered=!isButtonHovered">Home</button></a>
     <mat-divider class="cDivider" [ngClass]="{'cDivider_onHover': isButtonHovered}" [vertical]="true"></mat-divider>
     <a routerLink="/test3" routerLinkActive="active"><button mat-mini-fab (mouseenter)="isButtonHovered=!isButtonHovered" (mouseleave)="isButtonHovered=!isButtonHovered">Btn3</button></a>
-    <mat-divider class="cDivider" [ngClass]="{'cDivider_onHover': isButtonHovered}" [vertical]="true"></mat-divider>
-    <a routerLink="/test3" routerLinkActive="active"><button mat-mini-fab (mouseenter)="isButtonHovered=!isButtonHovered" (mouseleave)="isButtonHovered=!isButtonHovered">Btn4</button></a>
-    <mat-divider class="cDivider" [ngClass]="{'cDivider_onHover': isButtonHovered}" [vertical]="true"></mat-divider>
-    <a routerLink="/test3" routerLinkActive="active"><button mat-mini-fab (mouseenter)="isButtonHovered=!isButtonHovered" (mouseleave)="isButtonHovered=!isButtonHovered">Btn5</button></a>
+    <mat-divider class="cDivider" [ngClass]="{'cDivider_onHover': isButtonHovered}" [vertical]="true" dashed></mat-divider>
+    <a routerLink="/about" routerLinkActive="active"><button mat-mini-fab (mouseenter)="isButtonHovered=!isButtonHovered" (mouseleave)="isButtonHovered=!isButtonHovered">About</button></a>
   </div>
 </div>
+<div class="emptyBreak"></div>
+<app-workshop></app-workshop>
 <app-footer-bar></app-footer-bar>

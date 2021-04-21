@@ -17,10 +17,10 @@ export const slideInAnimation =
       query(':leave', animateChild()),
       group([
         query(':leave', [
-          animate('300ms ease-out', style({ left: '100%' }))
+          animate('600ms cubic-bezier(0.25, 0.8, 0.25, 1)', style({ left: '100%' }))
         ]),
         query(':enter', [
-          animate('300ms ease-out', style({ left: '0%' }))
+          animate('600ms cubic-bezier(0.25, 0.8, 0.25, 1)', style({ left: '0%' }))
         ])
       ]),
       query(':enter', animateChild()),

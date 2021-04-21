@@ -7,20 +7,22 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 import { HomeComponent } from './home/home.component';
-import { Test2Component } from './test2/test2.component';
+import { AboutComponent } from './about/about.component';
 import { Test3Component } from './test3/test3.component';
 import { FooterBarComponent } from './footer-bar/footer-bar.component';
 import { HelloSectionComponent } from './hello-section/hello-section.component';
+import { WorkshopComponent } from './workshop/workshop.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopbarComponent,
     HomeComponent,
-    Test2Component,
+    AboutComponent,
     Test3Component,
     FooterBarComponent,
-    HelloSectionComponent
+    HelloSectionComponent,
+    WorkshopComponent
   ],
   imports: [
     BrowserModule,
