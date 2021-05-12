@@ -1,0 +1,73 @@
+.findmeContainer {
+    padding: 50px 50px 0 50px;
+    //background: linear-gradient(180deg, rgba(45,58,64,1) 0%, rgba(45,58,64,0.1) 20%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    //height: 100%;
+    
+    div > h1 {
+        font-size: 32px;
+    }
+    p {
+        letter-spacing: 1px;
+        font-weight: 300;
+        font-family: 'Raleway', sans-serif;
+        line-height: 24px;
+    }
+    .icons {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 150px;
+        padding-right: 200px;
+        .c-icon {
+            font-size: 240px;
+        }
+    }
+}
+@media (max-width: 1440px) {
+    .findmeContainer {
+        .icons {
+            padding-right: 0;
+            font-size: 240px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .findmeContainer {
+        //border: 1px solid red;
+        align-items: center;
+        text-align: center;
+        padding: 10px 10px 0 10px;
+        h1 {
+            //border: 1px solid red;
+        }
+        .icons {
+            flex-direction: column;
+            align-items: center;
+            padding-top: 40px;
+
+            .c-icon {
+                margin-bottom: 20px;
+                font-size: 160px;
+            }
+        }
+    }
+}
+@media (max-width: 425px) {
+    .findmeContainer {
+        padding: 10px 10px 0 10px;
+        //border: 1px solid red;
+        .icons {
+            //border: 1px solid red;
+            // flex-direction: column;
+            // align-items: center;
+            // padding-top: 40px;
+
+            .c-icon {
+                // margin-bottom: 20px;
+                font-size: 160px;
+            }
+        }
+    }
+}

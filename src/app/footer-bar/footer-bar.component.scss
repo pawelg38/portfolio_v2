@@ -1,5 +1,29 @@
 .cFooter {
     height: 147px;
-    background-color: #313b42;
+    //background-color: #313b42;
+    background-color: #2d3a40;
+    background-color: #000;
     color: #fff;
+    padding: 20px;
+    display: flex;
+
+    .someClass1 {
+        width: 50%;
+    }
+    .someClass2 {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+
+        img,svg {
+            height: 26px;
+            align-self: flex-end;
+            margin: 0 4px;
+
+            &.s {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
 }

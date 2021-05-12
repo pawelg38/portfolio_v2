@@ -44,3 +44,7 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+#working directories
+/src/assets/img/images_work
+/src/assets/img/icons_work

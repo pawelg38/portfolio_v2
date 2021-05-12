@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostBinding } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { slideInAnimation } from '../animations/animations';
 import { trigger, state, style, animate, transition, query, animateChild, group } from '@angular/animations';

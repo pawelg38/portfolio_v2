@@ -5,13 +5,25 @@
     <router-outlet #outlet="outlet"></router-outlet>
   </div>
   <div class="slidesController">
-    <a routerLink="/home" routerLinkActive="active"><button mat-mini-fab (mouseenter)="isButtonHovered=!isButtonHovered" (mouseleave)="isButtonHovered=!isButtonHovered">Home</button></a>
+    <a routerLink="/home" routerLinkActive="active">
+      <button mat-mini-fab (mouseenter)="isButtonHovered=!isButtonHovered" (mouseleave)="isButtonHovered=!isButtonHovered">
+        <mat-icon matSuffix aria-hidden="false" aria-label="Example person icon">home</mat-icon>
+      </button>
+    </a>
     <mat-divider class="cDivider" [ngClass]="{'cDivider_onHover': isButtonHovered}" [vertical]="true"></mat-divider>
-    <a routerLink="/test3" routerLinkActive="active"><button mat-mini-fab (mouseenter)="isButtonHovered=!isButtonHovered" (mouseleave)="isButtonHovered=!isButtonHovered">Btn3</button></a>
+    <a routerLink="/about" routerLinkActive="active">
+      <button mat-mini-fab (mouseenter)="isButtonHovered=!isButtonHovered" (mouseleave)="isButtonHovered=!isButtonHovered">
+        <mat-icon matSuffix aria-hidden="false" aria-label="Example person icon">auto_stories</mat-icon>
+      </button>
+    </a>
     <mat-divider class="cDivider" [ngClass]="{'cDivider_onHover': isButtonHovered}" [vertical]="true" dashed></mat-divider>
-    <a routerLink="/about" routerLinkActive="active"><button mat-mini-fab (mouseenter)="isButtonHovered=!isButtonHovered" (mouseleave)="isButtonHovered=!isButtonHovered">About</button></a>
+    <a routerLink="/findme" routerLinkActive="active">
+      <button mat-mini-fab (mouseenter)="isButtonHovered=!isButtonHovered" (mouseleave)="isButtonHovered=!isButtonHovered">
+        <mat-icon matSuffix aria-hidden="false" aria-label="Example person icon">share</mat-icon>
+      </button>
+    </a>
   </div>
 </div>
-<div class="emptyBreak"></div>
+<!-- <div class="emptyBreak"></div> -->
 <app-workshop></app-workshop>
 <app-footer-bar></app-footer-bar>

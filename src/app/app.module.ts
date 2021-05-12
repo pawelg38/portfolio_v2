@@ -8,10 +8,11 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
-import { Test3Component } from './test3/test3.component';
+import { FindmeComponent } from './findme/findme.component';
 import { FooterBarComponent } from './footer-bar/footer-bar.component';
 import { HelloSectionComponent } from './hello-section/hello-section.component';
 import { WorkshopComponent } from './workshop/workshop.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import { WorkshopComponent } from './workshop/workshop.component';
     TopbarComponent,
     HomeComponent,
     AboutComponent,
-    Test3Component,
+    FindmeComponent,
     FooterBarComponent,
     HelloSectionComponent,
     WorkshopComponent
@@ -29,7 +30,8 @@ import { WorkshopComponent } from './workshop/workshop.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatDividerModule,
-    MatButtonModule
+    MatButtonModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
