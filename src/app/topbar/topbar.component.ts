@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-topbar',
@@ -6,7 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./topbar.component.scss']
 })
 export class TopbarComponent implements OnInit {
-
+  
+  @Output() scrollRequest = new EventEmitter<string>();
+  scroll() {
+    this.scrollRequest.emit("footer");
+  }
   constructor() { }
 
   ngOnInit(): void {

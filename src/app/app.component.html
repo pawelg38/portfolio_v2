@@ -1,6 +1,6 @@
-<app-topbar></app-topbar>
+<app-topbar (scrollRequest)="scrollTo($event)"></app-topbar>
 <app-hello-section></app-hello-section>
-<div class="slidesBar">
+<div class="slidesBar mat-elevation-z10">
   <div [@routeAnimations]="prepareRoute(outlet)" class="slidesContent">
     <router-outlet #outlet="outlet"></router-outlet>
   </div>

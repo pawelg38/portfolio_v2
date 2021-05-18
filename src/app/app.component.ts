@@ -19,4 +19,10 @@ export class AppComponent {
   prepareRoute(outlet: RouterOutlet) {
     return outlet && outlet.activatedRouteData && outlet.activatedRouteData.animation;
   }
+
+  scrollTo(el: HTMLElement) {
+    console.log(el);
+    var x = document.getElementById('footer');
+    x.scrollIntoView({behavior: "smooth"});
+  }
 }

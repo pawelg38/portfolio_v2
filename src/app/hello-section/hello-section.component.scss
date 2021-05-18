@@ -1,16 +1,44 @@
+// .cContainer {
+//     height: 300px;
+//     //background-color: #313b42;
+//     background-image:
+//     radial-gradient(circle, rgba(45,58,64,0.2) 0%, rgba(45,58,64,1) 80%),
+//     linear-gradient(0deg, rgba(45,58,64,1) 0%, rgba(45,58,64,0) 100%),
+//     url("../../assets/img/bg1.jpg");
+//     //background-size: 100% 400%;
+//     background-position-y: 60%;
+//     background-position-x: center;
+//     background-repeat: no-repeat;
+//     overflow: hidden;
+//     position: relative;
+// }
 .cContainer {
     height: 300px;
-    //background-color: #313b42;
+    background-color: #313b42;
     background-image:
     radial-gradient(circle, rgba(45,58,64,0.2) 0%, rgba(45,58,64,1) 80%),
     linear-gradient(0deg, rgba(45,58,64,1) 0%, rgba(45,58,64,0) 100%),
     url("../../assets/img/bg1.jpg");
-    //background-size: 100% 400%;
-    background-position-y: 60%;
     background-position-x: center;
     background-repeat: no-repeat;
     overflow: hidden;
     position: relative;
+    background-attachment: fixed;
+}
+@media (max-width: 2560px) {
+    .cContainer {
+        background-image:
+        radial-gradient(circle, rgba(45,58,64,0.2) 0%, rgba(45,58,64,1) 70%),
+        linear-gradient(0deg, rgba(45,58,64,1) 0%, rgba(45,58,64,0) 100%),
+        url("../../assets/img/bg1.jpg");
+        background-position-y: -244px;
+    }
+}
+@media (max-width: 425px) {
+    .cContainer {
+        background-position-y: -200px;
+        background-position-x: 47%;
+    }
 }
 .mainText {
     //border: 1px solid red;

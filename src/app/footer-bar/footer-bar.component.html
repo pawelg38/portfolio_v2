@@ -1,8 +1,12 @@
-<div class="cFooter">
-    <div class="someClass1">
+<div id="footer" class="cFooter mat-elevation-z24">
+    <div [@openClose]="isOpen ? 'open' : 'closed'" (click)="toggle()" class="someClass1">
+        <!-- <div [ngClass]="{'hBorder': isOpen}" class="hBorder1"></div>
+        <div class="vBorder"></div> -->
         Pobierz moje CV<br>
-        Numer kontaktowy: 664 207 310<br>
-        Adres email: pawelgrabos96@gmail.com
+        Numer kontaktowy:<br>
+        664 207 310<br>
+        Adres email:<br>
+        pawelgrabos96@gmail.com
     </div>
     <div class="someClass2">
         <img src="../../assets/img/icons/angular_whiteTransparent.png" title="Angular" alt="Angular">

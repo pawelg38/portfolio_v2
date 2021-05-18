@@ -1,14 +1,15 @@
 .cFooter {
-    height: 147px;
+    min-height: 147px;
     //background-color: #313b42;
     background-color: #2d3a40;
     background-color: #000;
     color: #fff;
-    padding: 20px;
+    padding: 20px 5px;
     display: flex;
+    //position: relative;
 
     .someClass1 {
-        width: 50%;
+        //width: 50%;
         color: rgb(0, 179, 179);
         color: #576f7a;
         //font-family: 'Raleway', sans-serif;
@@ -18,11 +19,20 @@
         //justify-content: center;
         align-items: center;
         line-height: 1.5;
+        padding: 0px 20px;
+        flex-grow: 1;
+
+        .no-wrapping {
+            display: inline-block;
+            white-space: nowrap;
+        }
     }
     .someClass2 {
-        width: 50%;
+        //width: 50%;
         display: flex;
+        flex-grow: 1;
         justify-content: flex-end;
+        padding: 0 10px 0 0;
 
         img,svg {
             height: 26px;
@@ -34,5 +44,26 @@
                 height: 24px;
             }
         }
+    }
+}
+
+@media (max-width: 425px) {
+    .cFooter {
+        //flex-direction: column;
+        flex-wrap: wrap;
+        padding: 10px 5px 0 5px;
+        //width: 100% !important;
+    }
+    .someClass1 {
+        //width: calc(100% - 40px) !important;
+        //border: 1px solid red;
+        //width: fit-content !important;
+        padding: 10px 15px !important;
+        //flex-grow: 1;
+    }
+    .someClass2 {
+        width: 100% !important;
+        //border: 1px solid red;
+        padding: 10px 0 !important;
     }
 }
