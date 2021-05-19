@@ -35,15 +35,17 @@
         //radial-gradient(circle, rgba(45,58,64,0.2) 0%, rgba(45,58,64,1) 100%),
         //linear-gradient(270deg, rgba(45,58,64,1) 50%, rgba(45,58,64,0) 100%),
         //linear-gradient(0deg, rgba(45,58,64,1) 0%, rgba(45,58,64,0) 60%),
-        linear-gradient(180deg, rgba(45,58,64,1) 50%, rgba(0, 0, 0, 0) 80%),
+        //linear-gradient(180deg, rgba(45,58,64,1) 50%, rgba(0, 0, 0, 0) 80%),
+        //url('../assets/img/bg2.jpg');
+        //url('../assets/img/images_work/bg2_oryg.jpg');
         url('../assets/img/bg2.jpg');
     //background-size: 50% 150%;
     //background-position-y: -100%;
     background-repeat: no-repeat;
     background-position-x: left;
     //border: 1px solid red;
-    background-attachment: fixed;
-    background-position-y: bottom;
+    //background-attachment: fixed;
+    background-position-y: center;
 }
 .slidesController {
     width: 80px;

@@ -31,13 +31,20 @@
         radial-gradient(circle, rgba(45,58,64,0.2) 0%, rgba(45,58,64,1) 70%),
         linear-gradient(0deg, rgba(45,58,64,1) 0%, rgba(45,58,64,0) 100%),
         url("../../assets/img/bg1.jpg");
-        background-position-y: -244px;
+        //background-position-y: 0px;
     }
 }
 @media (max-width: 425px) {
     .cContainer {
-        background-position-y: -200px;
+        background-image:
+        radial-gradient(circle, rgba(45,58,64,0.2) 0%, rgba(45,58,64,1) 80%),
+        linear-gradient(180deg, rgba(45,58,64,0) 0px, rgba(45,58,64,1) 356px),
+        url("../../assets/img/bg1.jpg");
+        //background-position-y: -200px;
         background-position-x: 47%;
+        background-attachment: fixed;
+        //overflow: hidden;
+        //background-repeat: repeat;
     }
 }
 .mainText {
