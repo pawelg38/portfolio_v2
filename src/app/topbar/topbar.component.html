@@ -1,5 +1,12 @@
 <div class="cTopBar mat-elevation-z8">
     <a mat-button routerLink="/home" routerLinkActive="active">Home</a>
     <button mat-button (click)="scroll()">Kontakt</button>
-    <button mat-button>Media</button>
+    <div class="social-media-container">
+        <button class="media-button" (click)="toggle()" mat-button>Media</button>
+        <div [@openClose]="isOpen ? 'open' : 'closed'"
+            (@openClose.done)="animationDone()"
+            class="social-media-expand">
+            <img class="social-media-logo" src="../../assets/img/icons/f_logo_RGB-Blue_26.png" alt="">
+        </div>
+    </div>
 </div>

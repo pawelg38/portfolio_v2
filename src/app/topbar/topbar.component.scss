@@ -5,7 +5,32 @@
     position: relative;
     z-index: 1999;
     padding: 10px;
+    display: flex;
 
+    .social-media-container {
+        display: flex;
+        position: relative;
+        button {
+            border-radius: 25px !important;
+        }
+
+        .social-media-expand {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 80px;
+            border-radius: 25px;
+            background-color: rgba($color: #000000, $alpha: 0.3);
+            position: absolute;
+            height: 36px;
+            padding-right: 15px;
+    
+            .social-media-logo {
+                height: 26px;
+                width: 26px;
+            }
+        }
+    }
     button {
         //border: 2px solid #fff;
     }

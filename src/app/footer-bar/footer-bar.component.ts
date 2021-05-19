@@ -34,7 +34,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
         ]))
       ]),
     ]),
-  ],
+  ]
 })
 export class FooterBarComponent implements OnInit {
 
