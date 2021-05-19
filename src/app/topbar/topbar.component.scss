@@ -25,9 +25,14 @@
             height: 36px;
             padding-right: 15px;
     
+            a {
+                display: flex;
+            }
             .social-media-logo {
                 height: 26px;
                 width: 26px;
+                z-index: 3000;
+                pointer-events: all;
             }
         }
     }
