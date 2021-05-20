@@ -17,13 +17,13 @@ import { Component, HostListener, OnInit } from '@angular/core';
         borderTop: "12px dotted #2d3a40",
         borderRight: "none",
         borderBottom: "12px dotted #2d3a40",
-        borderLeft: "15px solid rgb(0, 179, 179)"
+        borderLeft: "15px solid #303f9f"
       })),
       transition('closed => open', [
         animate("600ms cubic-bezier(0.25, 0.8, 0.25, 1)", keyframes([
           style({ borderTop: "12px dotted #2d3a40", offset: 0.33 }),
           style({ borderBottom: "12px dotted #2d3a40", offset: 0.66 }),
-          style({ borderLeft: "15px solid rgb(0, 179, 179)", offset: 1 })
+          style({ borderLeft: "15px solid #303f9f", offset: 1 })
         ]))
       ]),
       transition('open => closed', [

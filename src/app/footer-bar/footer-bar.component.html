@@ -1,12 +1,22 @@
 <div id="footer" class="cFooter mat-elevation-z24">
-    <div [@openClose]="isOpen ? 'open' : 'closed'" (click)="toggle()" class="someClass1">
+    <div [@openClose]="isOpen ? 'open' : 'closed'" class="someClass1">
         <!-- <div [ngClass]="{'hBorder': isOpen}" class="hBorder1"></div>
         <div class="vBorder"></div> -->
-        Pobierz moje CV<br>
-        Numer kontaktowy:<br>
-        664 207 310<br>
-        Adres email:<br>
-        pawelgrabos96@gmail.com
+        <div class="footer-info-container">
+            <a href="../../assets/cv/Paweł_Graboś_CV.pdf" download>
+                <div class="footer-info-cell1">
+                    Pobierz moje CV<br>
+                </div>
+            </a>
+        </div>
+        <div class="footer-info-container">
+            <div class="footer-info-cell2">
+                Adres email:<br>
+                pawelgrabos96@gmail.com<br>
+                Numer kontaktowy:<br>
+                664 207 310<br>
+            </div>
+        </div>
     </div>
     <div class="someClass2">
         <img src="../../assets/img/icons/logo-logomark.png" title="Firebase" alt="Firebase">
