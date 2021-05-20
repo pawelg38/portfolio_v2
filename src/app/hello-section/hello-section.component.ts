@@ -40,11 +40,6 @@ import { Component, HostBinding, OnInit } from '@angular/core';
 })
 export class HelloSectionComponent implements OnInit {
   public animationOn: boolean = false;
-  // textPart1 = "of(Paweł Graboś).subscribe(";
-  // textPart2 = "obs => obs.ShowYourSelf() );";
-  // test10 = of(1,2,3).subscribe(x => 
-  //   console.log(x)
-  // );
   @HostBinding("@openClose")
   textPart1 = "Witaj"
   textPart2 = "Undefined :)"

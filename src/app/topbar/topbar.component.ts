@@ -23,7 +23,6 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
         group([
           query('.social-media-logo', [
             style({
-              //transform: "scaleX(0.1) scaleY(0.1)"
               width: "2px",
               height: "2px"
             })
@@ -45,7 +44,6 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
           query('.social-media-logo', [
             animate("500ms 500ms cubic-bezier(0.25, 0.8, 0.25, 1)", 
               style({
-                //transform: "scaleX(1.0) scaleY(1.0)"
                 width: "26px",
                 height: "26px"
               })
@@ -58,7 +56,6 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
           query('.social-media-logo', [
             animate("500ms cubic-bezier(0.25, 0.8, 0.25, 1)",
               style({
-                //transform: "scaleX(0.1) scaleY(0.1)"
                 width: "2px",
                 height: "2px"
               })
@@ -100,7 +97,6 @@ export class TopbarComponent implements OnInit {
     this.isOpenAnimationDone = false;
   }
   animationDone() {
-    console.log(this.isOpenAnimationDone);
     this.isOpenAnimationDone = true;
   }
 

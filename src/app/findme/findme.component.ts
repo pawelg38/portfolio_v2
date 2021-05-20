@@ -28,10 +28,6 @@ import { Component, HostBinding, OnInit } from '@angular/core';
   ]
 })
 export class FindmeComponent implements OnInit {
-  // @HostBinding('@enterExitLeft') get getEnterExitLeft() {
-  //   //console.log("now");
-  //   return false;
-  // }
   @HostBinding("@enterExitLeft")
   public cos = true;
   constructor() { }

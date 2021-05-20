@@ -38,15 +38,11 @@ import { Component, HostListener, OnInit } from '@angular/core';
 })
 export class FooterBarComponent implements OnInit {
 
-  @HostListener('window:scroll', ['$event']) // for window scroll events
+  @HostListener('window:scroll', ['$event'])
   onScroll(event) {
-    console.log(document.documentElement.scrollTop);
-
     let pos = (document.documentElement.scrollTop || document.body.scrollTop) + document.documentElement.offsetHeight;
     let max = document.documentElement.scrollHeight;
-    // pos/max will give you the distance between scroll bottom and and bottom of screen in percentage.
     if(pos >= max-150 ) {
-      //Do your action here
       console.log('At the bottom');
       console.log("scrolled");
       this.isOpen = true;
@@ -60,9 +56,6 @@ export class FooterBarComponent implements OnInit {
   toggle() {
     this.isOpen = !this.isOpen;
   }
-  // onScroll(e) {
-  //   console.log(e);
-  // }
   constructor() { }
 
   ngOnInit(): void {

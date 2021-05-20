@@ -9,7 +9,6 @@ import { trigger, state, style, animate, transition, query, animateChild, group 
   styleUrls: ['./app.component.scss'],
   animations: [
     slideInAnimation
-    // animation triggers go here
   ]
 })
 export class AppComponent {
@@ -21,7 +20,6 @@ export class AppComponent {
   }
 
   scrollTo(el: HTMLElement) {
-    console.log(el);
     var x = document.getElementById('footer');
     x.scrollIntoView({behavior: "smooth"});
   }

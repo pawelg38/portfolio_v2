@@ -1,18 +1,12 @@
 @import '~@angular/material/theming';
 
-.emptyBreak {
-    height: 100px;
-    background-color: rgba(45,58,64,1);
-}
 .slidesBar {
     display: flex;
-    //background-color: #313b42;
     background-color: rgb(45,58,64);
     color: #fff;
     padding: 0;
     z-index: 2000;
     position: relative;
-    //border: 1px solid red;
     min-height: 710px;
 }
 @media (max-width: 425px) {
@@ -24,41 +18,19 @@
     }
 }
 .slidesContent {
-    // border: 1px solid red;
     width: 100%;
     overflow: hidden;
-    background-image: 
-        //radial-gradient(circle, rgba(45,58,64,0.2) 0%, rgba(45,58,64,1) 90%),
-        //linear-gradient(270deg, rgba(45,58,64,1) 0%, rgba(45,58,64,0) 30%),
-        //linear-gradient(0deg, rgba(45,58,64,1) 0%, rgba(45,58,64,0) 50%),
-        
-        //radial-gradient(circle, rgba(45,58,64,0.2) 0%, rgba(45,58,64,1) 100%),
-        //linear-gradient(270deg, rgba(45,58,64,1) 50%, rgba(45,58,64,0) 100%),
-        //linear-gradient(0deg, rgba(45,58,64,1) 0%, rgba(45,58,64,0) 60%),
-        //linear-gradient(180deg, rgba(45,58,64,1) 50%, rgba(0, 0, 0, 0) 80%),
-        //url('../assets/img/bg2.jpg');
-        //url('../assets/img/images_work/bg2_oryg.jpg');
-        url('../assets/img/bg2.jpg');
-    //background-size: 50% 150%;
-    //background-position-y: -100%;
+    background-image: url('../assets/img/bg2.jpg');
     background-repeat: no-repeat;
     background-position-x: left;
-    //border: 1px solid red;
-    //background-attachment: fixed;
     background-position-y: center;
 }
 .slidesController {
     width: 80px;
     text-align: center;
-    //border: 1px solid red;
     padding-top: 100px;
     margin-left: auto;
     margin-right: 50px;
-    //border: 1px solid red;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    //border: 1px solid red;
 
     .active {
 
@@ -83,8 +55,6 @@
         transition: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
         position: relative;
         z-index: 1001;
-        //display: flex;
-        //padding: 0;
 
         &:hover {
             background-color: rgba(#51bec4, 1.0);

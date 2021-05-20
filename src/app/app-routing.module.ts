@@ -8,8 +8,6 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent, data: {animation: 'Home'} },
   { path: 'about', component: AboutComponent, data: {animation: 'About'} },
   { path: 'findme', component: FindmeComponent, data: {animation: 'Share'} },
-  //{ path: '', component: HomeComponent },
-  //{ path: '**', component: HomeComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', redirectTo: '/home', pathMatch: 'full' }
 ];
